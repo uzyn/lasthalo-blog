@@ -1,0 +1,1004 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Lasthalo Development Weblog: April 2005</title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="MSSmartTagsPreventParsing" content="true" />
+<meta name="generator" content="Blogger" />
+<link rel="alternate" type="application/atom+xml" title="Lasthalo Development Weblog - Atom" href="http://lasthalo.uzyn.com/atom.xml" />
+<link rel="alternate" type="application/rss+xml" title="Lasthalo Development Weblog - RSS" href="http://lasthalo.uzyn.com/rss.xml" />
+<link rel="service.post" type="application/atom+xml" title="Lasthalo Development Weblog - Atom" href="http://www.blogger.com/feeds/11793814/posts/default" />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.blogger.com/rsd.g?blogID=11793814" />
+<style type="text/css">
+@import url("http://www.blogger.com/css/blog_controls.css");
+@import url("http://www.blogger.com/dyn-css/authorization.css?blogID=11793814");
+</style>
+
+
+  <style type="text/css">
+/*
+-----------------------------------------------
+Blogger Template Style
+Name:     Minima
+Designer: Douglas Bowman
+URL:      www.stopdesign.com
+Date:     26 Feb 2004
+----------------------------------------------- */
+
+
+body {
+  background:#fff;
+  margin:0;
+  padding:40px 20px;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  text-align:center;
+  color:#333;
+  font-size: 12px;
+  }
+a:link {
+  color:#06c;
+  text-decoration:none;
+  }
+a:visited {
+  color:#06c;
+  text-decoration:none;
+  }
+a:hover {
+  color:#c60;
+  text-decoration:underline;
+  }
+a img {
+  border-width:0;
+  }
+
+
+/* Header
+----------------------------------------------- */
+#header {
+  width:780px;
+  margin:0 auto 10px;
+  border:1px solid #ccc;
+  }
+#blog-title {
+  margin:5px 5px 0;
+  padding:20px 20px .25em;
+  border:1px solid #eee;
+  border-width:1px 1px 0;
+  font-size:220%;
+  line-height:1.2em;
+  font-weight:normal;
+  color:#06c;
+  text-transform:uppercase;
+  letter-spacing:.2em;
+  }
+#blog-title a {
+  color:#06c;
+  text-decoration:none;
+  }
+#blog-title a:hover {
+  color:#000;
+  }
+#description {
+  margin:0 5px 5px;
+  padding:0 20px 20px;
+  border:1px solid #eee;
+  border-width:0 1px 1px;
+  max-width:780px;
+  font:78%/1.4em "Trebuchet MS",Trebuchet,Arial,Verdana,Sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.2em;
+  color:#000;
+  }
+
+
+/* Content
+----------------------------------------------- */
+#content {
+  width:780px;
+  margin:0 auto;
+  padding:0;
+  text-align:left;
+  }
+#main {
+  width:530px;
+  float:left;
+  }
+#sidebar {
+  width:220px;
+  float:right;
+  }
+
+
+
+/* Headings
+----------------------------------------------- */
+h2 {
+  margin:1.5em 0 .75em;
+  font:78%/1.4em "Trebuchet MS",Trebuchet,Arial,Verdana,Sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.2em;
+  color:#999;
+  }
+
+
+/* Posts
+----------------------------------------------- */
+.date-header {
+  margin:1.5em 0 .5em;
+  }
+.post {
+  margin:.5em 0 1.5em;
+  border-bottom:1px dotted #ccc;
+  padding-bottom:1.5em;
+  }
+.post-title {
+  margin:.25em 0 0;
+  padding:0 0 4px;
+  font-size:140%;
+  font-weight:normal;
+  line-height:1.4em;
+  color:#c60;
+  }
+.post-title a, .post-title a:visited, .post-title strong {
+  display:block;
+  text-decoration:none;
+  color:#c60;
+  font-weight:normal;
+  }
+.post-title strong, .post-title a:hover {
+  color:#333;
+  }
+.post div {
+  margin:0 0 .75em;
+  line-height:1.6em;
+  }
+p.post-footer {
+  margin:-.25em 0 0;
+  color:#ccc;
+  }
+
+
+
+.post-footer em, .comment-link {
+  font:78%/1.4em "Trebuchet MS",Trebuchet,Arial,Verdana,Sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  }
+.post-footer em {
+  font-style:normal;
+  color:#999;
+  margin-right:.6em;
+  }
+.comment-link {
+  margin-left:.6em;
+  }
+.post blockquote {
+  margin:1em 20px;
+  }
+.post blockquote p {
+  margin:.75em 0;
+  }
+
+
+/* Comments
+----------------------------------------------- */
+#comments h4 {
+  margin:1em 0;
+  font:bold 78%/1.6em "Trebuchet MS",Trebuchet,Arial,Verdana,Sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.2em;
+  color:#999;
+  }
+#comments h4 strong {
+  font-size:130%;
+  }
+#comments-block {
+  margin:1em 0 1.5em;
+  line-height:1.6em;
+  }
+#comments-block dt {
+  margin:.5em 0;
+  }
+#comments-block dd {
+  margin:.25em 0 0;
+  }
+#comments-block dd.comment-timestamp {
+  margin:-.25em 0 2em;
+  font:78%/1.4em "Trebuchet MS",Trebuchet,Arial,Verdana,Sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  }
+#comments-block dd p {
+  margin:0 0 .75em;
+  }
+.deleted-comment {
+  font-style:italic;
+  color:gray;
+  }
+
+
+/* Sidebar Content
+----------------------------------------------- */
+#sidebar ul {
+  margin:0 0 1.5em;
+  padding:0 0 1.5em;
+  border-bottom:1px dotted #ccc;
+  list-style:none;
+  }
+#sidebar li {
+  margin:0;
+  padding:0 0 .25em 15px;
+  text-indent:-15px;
+  line-height:1.5em;
+  }
+#sidebar p {
+
+  color:#666;
+  line-height:1.5em;
+  }
+
+
+/* Profile
+
+
+
+----------------------------------------------- */
+#profile-container {
+  margin:0 0 1.5em;
+  border-bottom:1px dotted #ccc;
+  padding-bottom:1.5em;
+  }
+.profile-datablock {
+  margin:.5em 0 .5em;
+  }
+.profile-img {
+  display:inline;
+  }
+.profile-img img {
+  float:left;
+  padding:4px;
+
+
+  border:1px solid #ddd;
+  margin:0 8px 3px 0;
+  }
+.profile-data {
+  margin:0;
+  font:bold 78%/1.6em "Trebuchet MS",Trebuchet,Arial,Verdana,Sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  }
+.profile-data strong {
+  display:none;
+  }
+.profile-textblock {
+  margin:0 0 .5em;
+  }
+.profile-link {
+  margin:0;
+  font:78%/1.4em "Trebuchet MS",Trebuchet,Arial,Verdana,Sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  }
+
+
+/* Footer
+----------------------------------------------- */
+#footer {
+  width:780px;
+  clear:both;
+  margin:0 auto;
+  }
+#footer hr {
+  display:none;
+  }
+#footer p {
+  margin:0;
+  padding-top:15px;
+  font:78%/1.6em "Trebuchet MS",Trebuchet,Verdana,Sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  }
+
+/* Extra */
+code{
+   font-family: "Courier New", Courier, mono;
+   font-size: 9pt;
+   color: #00662B;
+}
+
+.lasthalo{
+	padding:20px;
+	background-color: #CFEEFF;
+	border: solid 1px #999999;
+}
+
+.lasthalo a{
+	color: #333333;
+	font-weight: bold;
+}
+
+#horilinks{
+    text-align: center;
+    font-weight: normal;
+	color: #000000;
+    font-size: 110%;
+}
+
+#horilinks a{
+    color: #FF00FF;
+    font-weight: normal;
+}
+
+#premiumlink{
+    color: #000099;
+    font-weight: bold;
+}
+
+#premiumlink a{
+    color: #000099;
+    font-weight: bold;
+}
+
+#premiumlink a:visited{
+    color: #000099;
+    font-weight: bold;
+}
+
+#premiumlinkside{
+    color: #000099;
+    font-weight: bold;
+}
+
+#premiumlinkside a{
+    color: #000099;
+    font-weight: bold;
+}
+
+#premiumlinkside a:visited{
+    color: #000099;
+    font-weight: bold;
+}
+
+  </style>
+
+<script type="text/javascript" src="http://www.haloscan.com/load/lasthalo/"></script>
+</head>
+
+<body>
+<div id="header">
+
+  <h1 id="blog-title">
+    
+	Lasthalo Development Weblog
+	
+  </h1>
+  <p id="description">LastHalo - The "last comments" sidebar for Haloscan.</p>
+
+
+<div id="horilinks">
+
+<strong>&nbsp;&nbsp;<a href="http://lasthalo.uzyn.com">Home</a>&nbsp;&nbsp; | &nbsp;&nbsp;<a href="#demo">Demonstration</a>&nbsp;&nbsp; | &nbsp;&nbsp;<a href="http://lasthalo.uzyn.com/2005/03/installation-instructions.html">Installation Instructions</a>&nbsp;&nbsp; | &nbsp;&nbsp;<a href="http://lasthalo.uzyn.com/2005/03/documentations.html">Documentations</a>&nbsp;&nbsp; | &nbsp;&nbsp;<span id="premiumlink"><a href="http://lasthalo.uzyn.com/premium/" title="LastHalo Premium">LastHalo Premium</a></span>&nbsp;&nbsp;</strong>
+
+</div>
+
+
+</div>
+
+<!-- Begin #content -->
+<div id="content">
+
+<!-- Begin #main -->
+<div id="main">
+
+<div id="main2">
+
+
+
+    
+  <h2 class="date-header">Tuesday, April 12, 2005</h2>
+  
+
+     
+  <!-- Begin .post -->
+  <div class="post"><a name="111328033844333838"></a>
+         
+    <h3 class="post-title">
+	 
+	 v0.3 Beta Is Now Live!
+	 
+    </h3>
+    
+
+	         <div class="post-body">
+	<div>
+      <div style="clear:both;"></div>Yes, LastHalo is barely 2 weeks old. To be exact, it had only been out for 12 days. But doesn't it feel like it has gone a long way?<br /><br />And yes, v0.3 of LastHalo is not a bug-fix only release. A few new features are added.<br /><ol><li>You can now specify the number of entries to be displayed. Simply use the '<span style="font-style:italic;">n</span>' parameter to specify the number of posts, from 1 to 10. The default '<span style="font-style:italic;">n</span>' value is 10.<br /><br />For example, to display 5 posts, you would use the following lines of code:<br /><blockquote><code>&lt;script language="javascript" type="text/javascript"<br />src="http://lasthalo.uzyn.com/show.php?u=<em>YOUR_USERNAME</em>&<span style="font-weight:bold;">n=5</span>"&gt;<br />&lt;/script&gt;</code></blockquote></li><br /><li>You can now kiss the standardized prefix 'From' goodbye. By using the parameter '<span style="font-style:italic;">pre</span>', you can now set LastHalo to display each entry with any prefix you like. As you may have noticed, the default value is now "By".<br /><br />As an example, to set prefix as "Kiss from", use the following codes:<br /><blockquote><code>&lt;script language="javascript" type="text/javascript"<br />src="http://lasthalo.uzyn.com/show.php?u=<em>YOUR_USERNAME</em>&<span style="font-weight:bold;">pre=Kiss+from</span>"&gt;<br />&lt;/script&gt;</code></blockquote><br /><span style="font-style:italic;">Note that you should separate each words with a '+' and not a space.</span><br /><br />To remove prefix, you should set prefix to null. <br />ie. <code>pre=null</code></li><br /><li>To complete the release, postfix customization is also possible. Simply use the '<span style="font-style:italic;">post</span>' parameter. The default value is an empty string, or null.<br /><br />An example to set postfix as "said", you would use the following codes:<br /><blockquote><code>&lt;script language="javascript" type="text/javascript"<br />src="http://lasthalo.uzyn.com/show.php?u=<em>YOUR_USERNAME</em>&<span style="font-weight:bold;">post=said</span>"&gt;<br />&lt;/script&gt;</code></blockquote></li></ol><br />You can use as many '<code>&</code>' as needed to combine a few parameters.<br /><br />Thanks for supporting LastHalo!<br /><br />Enjoy!<br /><br />For new users, please refer to <a href="http://lasthalo.uzyn.com/2005/03/installation-instructions.html">Installation Instructions</a>.<div style="clear:both; padding-bottom:0.25em"></div>
+    </div>
+    </div>
+    
+    <p class="post-footer">
+      <em>posted by uzyn at <a href="http://lasthalo.uzyn.com/2005/04/v03-beta-is-now-live.html" title="permanent link">12:16 PM</a></em>
+      
+
+<a class="comment-link" href="http://www.haloscan.com/comments/lasthalo/111328033844333838/" title="Comment" onclick="HaloScan('111328033844333838'); return false;"><script type="text/javascript">postCount('111328033844333838'); </script></a> | <a class="comment-link" href="http://www.haloscan.com/tb/lasthalo/111328033844333838/" title="Trackback" onclick="HaloScanTB('111328033844333838'); return false;"><script type="text/javascript">postCountTB('111328033844333838'); </script></a>
+<!-- Trackback autodiscovery code
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	 xmlns:dc="http://purl.org/dc/elements/1.1/"
+	 xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+<rdf:Description
+	 rdf:about="http://lasthalo.uzyn.com/2005/04/v03-beta-is-now-live.html"
+	 dc:identified="http://lasthalo.uzyn.com/2005/04/v03-beta-is-now-live.html"
+	 dc:title="v0.3 Beta Is Now Live!"
+	 trackback:ping="http://haloscan.com/tb/lasthalo/111328033844333838" />
+</rdf:RDF>
+-->
+
+  <span class="item-action"><a href="http://www.blogger.com/email-post.g?blogID=11793814&postID=111328033844333838" title="Email Post"><span class="email-post-icon">&nbsp;</span></a></span><span class="item-control blog-admin pid-13327147"><a style="border:none;" href="http://www.blogger.com/post-edit.g?blogID=11793814&postID=111328033844333838" title="Edit Post"><span class="quick-edit-icon">&nbsp;</span></a></span>
+    </p>
+  
+  </div>
+  <!-- End .post -->
+  
+  
+  
+  <!-- Begin #comments -->
+ 
+
+  <!-- End #comments -->
+
+
+
+    
+  <h2 class="date-header">Sunday, April 10, 2005</h2>
+  
+
+     
+  <!-- Begin .post -->
+  <div class="post"><a name="111307713534782787"></a>
+         
+    <h3 class="post-title">
+	 
+	 Upgrade of Haloscan Account
+	 
+    </h3>
+    
+
+	         <div class="post-body">
+	<div>
+      <div style="clear:both;"></div>Thanks Jeevan, for the upgrade. I really appreaciate it. <br /><blockquote>To: lasthalo@uzyn.com<br />From: HaloScan &lt;contact@haloscan.com&gt;<br />Subject: Haloscan account  upgrade<br />Date: Sat, 9 Apr 2005 15:59:47 -0400<br />X-Mailer: Apple Mail (2.619.2)<br /><br />Hi,<br /><br />I've upgraded your account to a premium one for free for the nice work <br />you've done with lasthalo.<br /><br />Keep up the good work. :-)<br /><br />--<br />  Jeevan<br />  http://www.haloscan.com<br />  contact@haloscan.com</blockquote><div style="clear:both; padding-bottom:0.25em"></div>
+    </div>
+    </div>
+    
+    <p class="post-footer">
+      <em>posted by uzyn at <a href="http://lasthalo.uzyn.com/2005/04/upgrade-of-haloscan-account.html" title="permanent link">4:04 AM</a></em>
+      
+
+<a class="comment-link" href="http://www.haloscan.com/comments/lasthalo/111307713534782787/" title="Comment" onclick="HaloScan('111307713534782787'); return false;"><script type="text/javascript">postCount('111307713534782787'); </script></a> | <a class="comment-link" href="http://www.haloscan.com/tb/lasthalo/111307713534782787/" title="Trackback" onclick="HaloScanTB('111307713534782787'); return false;"><script type="text/javascript">postCountTB('111307713534782787'); </script></a>
+<!-- Trackback autodiscovery code
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	 xmlns:dc="http://purl.org/dc/elements/1.1/"
+	 xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+<rdf:Description
+	 rdf:about="http://lasthalo.uzyn.com/2005/04/upgrade-of-haloscan-account.html"
+	 dc:identified="http://lasthalo.uzyn.com/2005/04/upgrade-of-haloscan-account.html"
+	 dc:title="Upgrade of Haloscan Account"
+	 trackback:ping="http://haloscan.com/tb/lasthalo/111307713534782787" />
+</rdf:RDF>
+-->
+
+  <span class="item-action"><a href="http://www.blogger.com/email-post.g?blogID=11793814&postID=111307713534782787" title="Email Post"><span class="email-post-icon">&nbsp;</span></a></span><span class="item-control blog-admin pid-13327147"><a style="border:none;" href="http://www.blogger.com/post-edit.g?blogID=11793814&postID=111307713534782787" title="Edit Post"><span class="quick-edit-icon">&nbsp;</span></a></span>
+    </p>
+  
+  </div>
+  <!-- End .post -->
+  
+  
+  
+  <!-- Begin #comments -->
+ 
+
+  <!-- End #comments -->
+
+
+
+    
+  <h2 class="date-header">Friday, April 08, 2005</h2>
+  
+
+     
+  <!-- Begin .post -->
+  <div class="post"><a name="111294724345717211"></a>
+         
+    <h3 class="post-title">
+	 
+	 v0.2d Beta
+	 
+    </h3>
+    
+
+	         <div class="post-body">
+	<div>
+      <div style="clear:both;"></div>This is only a bug fix release. <br /><br />Version 0.2d Beta of LastHalo fixed the <a href="http://www.haloscan.com/comments/lasthalo/111271546484084489#7187">bug reported by Steve Bates</a>, ie. LastHalo would break if a user enters backslash or multiple backslashes in the 'Name' field.<br /><br />v0.2d Beta now displays correctly the 'Name' and the 'Comment' field even it if contains backslashes and/or apostrophes.<br /><br />Please note that what is displayed on LastHalo is exactly what the user has typed into the 'Name' field.<br /><br />There are some discrepancies with Haloscan's comment window. Single backslash in the name will appear as single backslash, double backslash will appear as a SINGLE backslash.<br /><br />For LastHalo, single is single; double is double.<br /><br />Have a good day.<br /><br /><a href="http://lasthalo.uzyn.com/2005/03/installation-instructions.html">LastHalo Installation Instructions</a> for new users.<div style="clear:both; padding-bottom:0.25em"></div>
+    </div>
+    </div>
+    
+    <p class="post-footer">
+      <em>posted by uzyn at <a href="http://lasthalo.uzyn.com/2005/04/v02d-beta.html" title="permanent link">3:54 PM</a></em>
+      
+
+<a class="comment-link" href="http://www.haloscan.com/comments/lasthalo/111294724345717211/" title="Comment" onclick="HaloScan('111294724345717211'); return false;"><script type="text/javascript">postCount('111294724345717211'); </script></a> | <a class="comment-link" href="http://www.haloscan.com/tb/lasthalo/111294724345717211/" title="Trackback" onclick="HaloScanTB('111294724345717211'); return false;"><script type="text/javascript">postCountTB('111294724345717211'); </script></a>
+<!-- Trackback autodiscovery code
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	 xmlns:dc="http://purl.org/dc/elements/1.1/"
+	 xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+<rdf:Description
+	 rdf:about="http://lasthalo.uzyn.com/2005/04/v02d-beta.html"
+	 dc:identified="http://lasthalo.uzyn.com/2005/04/v02d-beta.html"
+	 dc:title="v0.2d Beta"
+	 trackback:ping="http://haloscan.com/tb/lasthalo/111294724345717211" />
+</rdf:RDF>
+-->
+
+  <span class="item-action"><a href="http://www.blogger.com/email-post.g?blogID=11793814&postID=111294724345717211" title="Email Post"><span class="email-post-icon">&nbsp;</span></a></span><span class="item-control blog-admin pid-13327147"><a style="border:none;" href="http://www.blogger.com/post-edit.g?blogID=11793814&postID=111294724345717211" title="Edit Post"><span class="quick-edit-icon">&nbsp;</span></a></span>
+    </p>
+  
+  </div>
+  <!-- End .post -->
+  
+  
+  
+  <!-- Begin #comments -->
+ 
+
+  <!-- End #comments -->
+
+
+
+    
+
+     
+  <!-- Begin .post -->
+  <div class="post"><a name="111290536329252123"></a>
+         
+    <h3 class="post-title">
+	 
+	 Last 100 Requests
+	 
+    </h3>
+    
+
+	         <div class="post-body">
+	<div>
+      <div style="clear:both;"></div>Ever wondered who have installed LastHalo?<br />Ever wondered how LastHalo looks like on users' blogs?<br /><br />Check out the <a href="http://lasthalo.uzyn.com/simplereferer">LastHalo Last 100 Requests</a>.<br /><br />Refresh periodically to see an updated list of recent LastHalo requests.<br /><br />Have fun blog-hopping!<br /><br /><a href="http://lasthalo.uzyn.com/2005/03/installation-instructions.html">LastHalo Installation Instructions</a> for new users.<div style="clear:both; padding-bottom:0.25em"></div>
+    </div>
+    </div>
+    
+    <p class="post-footer">
+      <em>posted by uzyn at <a href="http://lasthalo.uzyn.com/2005/04/last-100-requests.html" title="permanent link">4:16 AM</a></em>
+      
+
+<a class="comment-link" href="http://www.haloscan.com/comments/lasthalo/111290536329252123/" title="Comment" onclick="HaloScan('111290536329252123'); return false;"><script type="text/javascript">postCount('111290536329252123'); </script></a> | <a class="comment-link" href="http://www.haloscan.com/tb/lasthalo/111290536329252123/" title="Trackback" onclick="HaloScanTB('111290536329252123'); return false;"><script type="text/javascript">postCountTB('111290536329252123'); </script></a>
+<!-- Trackback autodiscovery code
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	 xmlns:dc="http://purl.org/dc/elements/1.1/"
+	 xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+<rdf:Description
+	 rdf:about="http://lasthalo.uzyn.com/2005/04/last-100-requests.html"
+	 dc:identified="http://lasthalo.uzyn.com/2005/04/last-100-requests.html"
+	 dc:title="Last 100 Requests"
+	 trackback:ping="http://haloscan.com/tb/lasthalo/111290536329252123" />
+</rdf:RDF>
+-->
+
+  <span class="item-action"><a href="http://www.blogger.com/email-post.g?blogID=11793814&postID=111290536329252123" title="Email Post"><span class="email-post-icon">&nbsp;</span></a></span><span class="item-control blog-admin pid-13327147"><a style="border:none;" href="http://www.blogger.com/post-edit.g?blogID=11793814&postID=111290536329252123" title="Edit Post"><span class="quick-edit-icon">&nbsp;</span></a></span>
+    </p>
+  
+  </div>
+  <!-- End .post -->
+  
+  
+  
+  <!-- Begin #comments -->
+ 
+
+  <!-- End #comments -->
+
+
+
+    
+  <h2 class="date-header">Tuesday, April 05, 2005</h2>
+  
+
+     
+  <!-- Begin .post -->
+  <div class="post"><a name="111271546484084489"></a>
+         
+    <h3 class="post-title">
+	 
+	 Switching Server
+	 
+    </h3>
+    
+
+	         <div class="post-body">
+	<div>
+      <div style="clear:both;"></div>LastHalo has been experiencing lots of down time recently. I have requseted my host to switch it to a more stable server.<br /><br />You do not have to do anything. Just keep in mind that there will be a DNS propagation delay of about 24-72 hours. LastHalo service should not be having any downtime at all during the propagation process, unless, of course, one of the servers go down during the propagation process.<br /><br />Thank you for your understanding and support. <br />I'm sorry for the inconvenience.<br /><br /><a href="http://lasthalo.uzyn.com/2005/03/installation-instructions.html">Installation Instructions</a> for new users.<br /><br /><strong>Updated at 6 April 11:26PM (+0800):</strong><br />Server transfer is successful. DNS propagation is also completed from where I'm at. Thanks for your patience.<div style="clear:both; padding-bottom:0.25em"></div>
+    </div>
+    </div>
+    
+    <p class="post-footer">
+      <em>posted by uzyn at <a href="http://lasthalo.uzyn.com/2005/04/switching-server.html" title="permanent link">11:33 PM</a></em>
+      
+
+<a class="comment-link" href="http://www.haloscan.com/comments/lasthalo/111271546484084489/" title="Comment" onclick="HaloScan('111271546484084489'); return false;"><script type="text/javascript">postCount('111271546484084489'); </script></a> | <a class="comment-link" href="http://www.haloscan.com/tb/lasthalo/111271546484084489/" title="Trackback" onclick="HaloScanTB('111271546484084489'); return false;"><script type="text/javascript">postCountTB('111271546484084489'); </script></a>
+<!-- Trackback autodiscovery code
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	 xmlns:dc="http://purl.org/dc/elements/1.1/"
+	 xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+<rdf:Description
+	 rdf:about="http://lasthalo.uzyn.com/2005/04/switching-server.html"
+	 dc:identified="http://lasthalo.uzyn.com/2005/04/switching-server.html"
+	 dc:title="Switching Server"
+	 trackback:ping="http://haloscan.com/tb/lasthalo/111271546484084489" />
+</rdf:RDF>
+-->
+
+  <span class="item-action"><a href="http://www.blogger.com/email-post.g?blogID=11793814&postID=111271546484084489" title="Email Post"><span class="email-post-icon">&nbsp;</span></a></span><span class="item-control blog-admin pid-13327147"><a style="border:none;" href="http://www.blogger.com/post-edit.g?blogID=11793814&postID=111271546484084489" title="Edit Post"><span class="quick-edit-icon">&nbsp;</span></a></span>
+    </p>
+  
+  </div>
+  <!-- End .post -->
+  
+  
+  
+  <!-- Begin #comments -->
+ 
+
+  <!-- End #comments -->
+
+
+
+    
+  <h2 class="date-header">Saturday, April 02, 2005</h2>
+  
+
+     
+  <!-- Begin .post -->
+  <div class="post"><a name="111241877367251604"></a>
+         
+    <h3 class="post-title">
+	 
+	 v0.2c Beta
+	 
+    </h3>
+    
+
+	         <div class="post-body">
+	<div>
+      <div style="clear:both;"></div>Fixed a bug where LastHalo causes the Comments(x) counter to not increase.<br /><br />LastHalo now works independently of the Haloscan comment script on blogs.<br /><br />No actions is needed on users part.<br /><br />Thanks.<br /><br /><a href="http://lasthalo.uzyn.com/2005/03/installation-instructions.html">Installation Instructions</a> for new users.<div style="clear:both; padding-bottom:0.25em"></div>
+    </div>
+    </div>
+    
+    <p class="post-footer">
+      <em>posted by uzyn at <a href="http://lasthalo.uzyn.com/2005/04/v02c-beta.html" title="permanent link">1:06 PM</a></em>
+      
+
+<a class="comment-link" href="http://www.haloscan.com/comments/lasthalo/111241877367251604/" title="Comment" onclick="HaloScan('111241877367251604'); return false;"><script type="text/javascript">postCount('111241877367251604'); </script></a> | <a class="comment-link" href="http://www.haloscan.com/tb/lasthalo/111241877367251604/" title="Trackback" onclick="HaloScanTB('111241877367251604'); return false;"><script type="text/javascript">postCountTB('111241877367251604'); </script></a>
+<!-- Trackback autodiscovery code
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	 xmlns:dc="http://purl.org/dc/elements/1.1/"
+	 xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+<rdf:Description
+	 rdf:about="http://lasthalo.uzyn.com/2005/04/v02c-beta.html"
+	 dc:identified="http://lasthalo.uzyn.com/2005/04/v02c-beta.html"
+	 dc:title="v0.2c Beta"
+	 trackback:ping="http://haloscan.com/tb/lasthalo/111241877367251604" />
+</rdf:RDF>
+-->
+
+  <span class="item-action"><a href="http://www.blogger.com/email-post.g?blogID=11793814&postID=111241877367251604" title="Email Post"><span class="email-post-icon">&nbsp;</span></a></span><span class="item-control blog-admin pid-13327147"><a style="border:none;" href="http://www.blogger.com/post-edit.g?blogID=11793814&postID=111241877367251604" title="Edit Post"><span class="quick-edit-icon">&nbsp;</span></a></span>
+    </p>
+  
+  </div>
+  <!-- End .post -->
+  
+  
+  
+  <!-- Begin #comments -->
+ 
+
+  <!-- End #comments -->
+
+
+
+    
+
+     
+  <!-- Begin .post -->
+  <div class="post"><a name="111237215429242141"></a>
+         
+    <h3 class="post-title">
+	 
+	 v0.2b Beta
+	 
+    </h3>
+    
+
+	         <div class="post-body">
+	<div>
+      <div style="clear:both;"></div>LastHalo is now v0.2b Beta.<br /><br />Quickfix on the popup javascript of LastHalo v0.2.<br /><br />LastHalo v0.2 popup had some slight display problem on Internet Explorer.<br /><br />It is now fixed on v0.2b. No actions is needed on users' parts. <br /><br />Have fun!<br /><br /><a href="http://lasthalo.uzyn.com/2005/03/installation-instructions.html">Installation Instructions</a> for new users.<div style="clear:both; padding-bottom:0.25em"></div>
+    </div>
+    </div>
+    
+    <p class="post-footer">
+      <em>posted by uzyn at <a href="http://lasthalo.uzyn.com/2005/04/v02b-beta.html" title="permanent link">12:13 AM</a></em>
+      
+
+<a class="comment-link" href="http://www.haloscan.com/comments/lasthalo/111237215429242141/" title="Comment" onclick="HaloScan('111237215429242141'); return false;"><script type="text/javascript">postCount('111237215429242141'); </script></a> | <a class="comment-link" href="http://www.haloscan.com/tb/lasthalo/111237215429242141/" title="Trackback" onclick="HaloScanTB('111237215429242141'); return false;"><script type="text/javascript">postCountTB('111237215429242141'); </script></a>
+<!-- Trackback autodiscovery code
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	 xmlns:dc="http://purl.org/dc/elements/1.1/"
+	 xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+<rdf:Description
+	 rdf:about="http://lasthalo.uzyn.com/2005/04/v02b-beta.html"
+	 dc:identified="http://lasthalo.uzyn.com/2005/04/v02b-beta.html"
+	 dc:title="v0.2b Beta"
+	 trackback:ping="http://haloscan.com/tb/lasthalo/111237215429242141" />
+</rdf:RDF>
+-->
+
+  <span class="item-action"><a href="http://www.blogger.com/email-post.g?blogID=11793814&postID=111237215429242141" title="Email Post"><span class="email-post-icon">&nbsp;</span></a></span><span class="item-control blog-admin pid-13327147"><a style="border:none;" href="http://www.blogger.com/post-edit.g?blogID=11793814&postID=111237215429242141" title="Edit Post"><span class="quick-edit-icon">&nbsp;</span></a></span>
+    </p>
+  
+  </div>
+  <!-- End .post -->
+  
+  
+  
+  <!-- Begin #comments -->
+ 
+
+  <!-- End #comments -->
+
+
+
+    
+  <h2 class="date-header">Friday, April 01, 2005</h2>
+  
+
+     
+  <!-- Begin .post -->
+  <div class="post"><a name="111236741571597045"></a>
+         
+    <h3 class="post-title">
+	 
+	 v0.2 Beta Is Live
+	 
+    </h3>
+    
+
+	         <div class="post-body">
+	<div>
+      <div style="clear:both;"></div>I know this is fast. And I know today's April Fool's Day.<br /><br />Anyway, some changes in v0.2 Beta:<br /><ol><li>Clicking on comments now opens a new window with properties similar to Haloscan's. Clicking on comments no longer opens up a default-sized browser window with the toolbar.</li><br /><li><span style="font-style:italic;">Powered by LastHalo</span> acknowledgement is now embeded in the script. You no longer needs to include it on your own.<br /><br /><span style="font-weight:bold;">If you are a LastHalo user since v0.1 and are nice enough to have included the acknowledgement code in your template, please remove it to avoid double <span style="font-style:italic;">Powered by</span> lines. Sorry about that and thank you for supporting LastHalo since its first ever release!</li></ol><br />Please do check out this development weblog from time to time, or you can subscribe to the <a href="http://lasthalo.uzyn.com/atom.xml">Atom feed</a>, for updates on future releases. Although it is most often unnecessary for you to alter your code on your blog for default usage, it would be nice if you follow LastHalo's progress. On top of that, you might learn some new tricks on using LastHalo for its future releases.</span><br /><br />For new users, please check out the <a href="http://lasthalo.uzyn.com/2005/03/installation-instructions.html">Installation Instructions</a>.<br /><br />Happy April Fool's Day!<div style="clear:both; padding-bottom:0.25em"></div>
+    </div>
+    </div>
+    
+    <p class="post-footer">
+      <em>posted by uzyn at <a href="http://lasthalo.uzyn.com/2005/04/v02-beta-is-live.html" title="permanent link">10:48 PM</a></em>
+      
+
+<a class="comment-link" href="http://www.haloscan.com/comments/lasthalo/111236741571597045/" title="Comment" onclick="HaloScan('111236741571597045'); return false;"><script type="text/javascript">postCount('111236741571597045'); </script></a> | <a class="comment-link" href="http://www.haloscan.com/tb/lasthalo/111236741571597045/" title="Trackback" onclick="HaloScanTB('111236741571597045'); return false;"><script type="text/javascript">postCountTB('111236741571597045'); </script></a>
+<!-- Trackback autodiscovery code
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	 xmlns:dc="http://purl.org/dc/elements/1.1/"
+	 xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+<rdf:Description
+	 rdf:about="http://lasthalo.uzyn.com/2005/04/v02-beta-is-live.html"
+	 dc:identified="http://lasthalo.uzyn.com/2005/04/v02-beta-is-live.html"
+	 dc:title="v0.2 Beta Is Live"
+	 trackback:ping="http://haloscan.com/tb/lasthalo/111236741571597045" />
+</rdf:RDF>
+-->
+
+  <span class="item-action"><a href="http://www.blogger.com/email-post.g?blogID=11793814&postID=111236741571597045" title="Email Post"><span class="email-post-icon">&nbsp;</span></a></span><span class="item-control blog-admin pid-13327147"><a style="border:none;" href="http://www.blogger.com/post-edit.g?blogID=11793814&postID=111236741571597045" title="Edit Post"><span class="quick-edit-icon">&nbsp;</span></a></span>
+    </p>
+  
+  </div>
+  <!-- End .post -->
+  
+  
+  
+  <!-- Begin #comments -->
+ 
+
+  <!-- End #comments -->
+
+
+</div></div>
+<!-- End #main -->
+
+
+
+
+
+
+
+<!-- Begin #sidebar -->
+<div id="sidebar"><div id="sidebar2">
+
+<script type="text/javascript"><!--
+google_ad_client = "pub-6699632613168704";
+google_ad_width = 180;
+google_ad_height = 150;
+google_ad_format = "180x150_as";
+google_ad_type = "text_image";
+google_ad_channel ="3434476738";
+google_color_border = "FFFFFF";
+google_color_bg = "FFFFFF";
+google_color_link = "0066CC";
+google_color_url = "999999";
+google_color_text = "000000";
+//--></script>
+<script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+  
+  
+  <h2 class="sidebar-title">About LastHalo</h2>
+  <p>LastHalo is a "last comment" sidebar created for <a href="http://haloscan.com">Haloscan</a> users.</p>
+  <p><b><a href="http://lasthalo.uzyn.com/2005/03/installation-instructions.html">Installation Instructions</a></b><br />
+  <a href="http://lasthalo.uzyn.com/2005/03/documentations.html">Documentations & Advanced Features</a><br />
+  <p id="premiumlinkside"><a href="http://lasthalo.uzyn.com/premium/" title="LastHalo Premium">LastHalo Premium</a></p>  
+  Current version: <b>v0.5a Beta</b></p>
+  <p>LastHalo is coded by <a href="http://uzyn.com">Chua U-Zyn</a><br />
+  Email: <a href="mailto:lasthalo@uzyn.com">lasthalo@uzyn.com</a></p>
+
+  <a name="demo"></a>
+  <h2 class="sidebar-title">Last Comments</h2>
+  <script language="javascript" type="text/javascript"
+  src="http://lasthalo.uzyn.com/show.php?u=lasthalo">
+  </script>
+
+  <h2 class="sidebar-title">Sponsored Link</h2>
+    <ul>
+<li><a href="http://ping.sg" title="The Community-Driven Meta Blog for Singapore Bloggers">ping.sg</a></li>
+  </ul>
+
+  
+
+  <h2 class="sidebar-title">Links</h2>
+    <ul>
+    	<li><a href="http://uzyn.com/">uzyn.com</a></li>
+    	<li><a href="http://haloscan.com">Haloscan</a></li>
+    	<li><a href="http://blogger.com">Blogger</a></li>
+  </ul>
+
+  
+
+  
+  <h2 class="sidebar-title">Previous Posts</h2>
+    <ul id="recently">
+    
+        <li><a href="http://lasthalo.uzyn.com/2006/06/advertise-with-lasthalo.html">Advertise with LastHalo</a></li>
+     
+        <li><a href="http://lasthalo.uzyn.com/2006/03/lasthalo-premium-is-live.html">LastHalo Premium is Live!</a></li>
+     
+        <li><a href="http://lasthalo.uzyn.com/2006/03/switching-host.html">Switching Host</a></li>
+     
+        <li><a href="http://lasthalo.uzyn.com/2006/02/ad-supported.html">Ad-Supported</a></li>
+     
+        <li><a href="http://lasthalo.uzyn.com/2005/11/updates-coming-up.html">Updates Coming Up</a></li>
+     
+        <li><a href="http://lasthalo.uzyn.com/2005/10/lasthalo-v05-caching.html">LastHalo v0.5: Caching</a></li>
+     
+        <li><a href="http://lasthalo.uzyn.com/2005/09/v04-beta-launched-blog-post-title.html">v0.4 Beta Launched: Blog Post Title Retrieval Enab...</a></li>
+     
+        <li><a href="http://lasthalo.uzyn.com/2005/09/blog-title-popup.html">Blog Title Popup</a></li>
+     
+        <li><a href="http://lasthalo.uzyn.com/2005/09/lasthalo-bandwidth-exceeded-please.html">LastHalo Bandwidth Exceeded, Please Help</a></li>
+     
+        <li><a href="http://lasthalo.uzyn.com/2005/09/haloscans-blog-title-retrieval.html">Haloscan&#39;s Blog Title Retrieval</a></li>
+     
+  </ul>
+    
+
+  <h2 class="sidebar-title">Archives</h2>
+    <ul class="archive-list">
+   	  
+    	<li><a href="http://lasthalo.uzyn.com/2005_03_01_archive.html">March 2005</a></li>
+	  
+    	<li><a href="http://lasthalo.uzyn.com/2005_04_01_archive.html">April 2005</a></li>
+	  
+    	<li><a href="http://lasthalo.uzyn.com/2005_05_01_archive.html">May 2005</a></li>
+	  
+    	<li><a href="http://lasthalo.uzyn.com/2005_07_01_archive.html">July 2005</a></li>
+	  
+    	<li><a href="http://lasthalo.uzyn.com/2005_09_01_archive.html">September 2005</a></li>
+	  
+    	<li><a href="http://lasthalo.uzyn.com/2005_10_01_archive.html">October 2005</a></li>
+	  
+    	<li><a href="http://lasthalo.uzyn.com/2005_11_01_archive.html">November 2005</a></li>
+	  
+    	<li><a href="http://lasthalo.uzyn.com/2006_02_01_archive.html">February 2006</a></li>
+	  
+    	<li><a href="http://lasthalo.uzyn.com/2006_03_01_archive.html">March 2006</a></li>
+	  
+    	<li><a href="http://lasthalo.uzyn.com/2006_06_01_archive.html">June 2006</a></li>
+	  
+
+  </ul>
+  
+
+      <a href="http://lasthalo.uzyn.com/atom.xml"><img src="http://uzyn.com/img/xml.gif" alt="atom feed" /></a>
+
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript" language="javascript">
+var sc_project=628806; 
+var sc_partition=5; 
+var sc_security="f8ba03c5"; 
+
+</script>
+<!-- Start of StatCounter Code -->
+<script type="text/javascript" language="javascript">
+<!-- 
+var sc_project=628806; 
+var sc_partition=5; 
+var sc_security="f8ba03c5"; 
+var sc_invisible=1; 
+//-->
+</script>
+
+<script type="text/javascript" language="javascript" src="http://www.statcounter.com/counter/counter.js"></script><noscript><a href="http://www.statcounter.com/" target="_blank"><img  src="http://c6.statcounter.com/counter.php?sc_project=628806&amp;java=0&amp;security=f8ba03c5&amp;invisible=1" alt="web log free" border="0"></a> </noscript>
+<!-- End of StatCounter Code -->
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-52524-3";
+urchinTracker();
+</script>
+
+      <p><a href="http://lasthalo.uzyn.com"><img src="http://lasthalo.uzyn.com/lhicon.gif" alt="Last Comments Add-On by LastHalo" width="88" height="31" /></a></p>
+      <p id="powered-by"><a href="http://www.blogger.com"><img src="http://buttons.blogger.com/bloggerbutton1.gif" alt="Powered by Blogger" /></a></p>
+      <p><a href="http://www.haloscan.com/"><img width="88" height="31" src="http://www.haloscan.com/halolink.gif" border="0" alt="Weblog Commenting and Trackback by HaloScan.com" /></a></p>
+
+<p>
+<script type="text/javascript"><!--
+google_ad_client = "pub-6699632613168704";
+google_ad_width = 160;
+google_ad_height = 600;
+google_ad_format = "160x600_as";
+google_ad_type = "image";
+google_ad_channel ="1175873869";
+google_color_border = "FFFFFF";
+google_color_bg = "FFFFFF";
+google_color_link = "6699CC";
+google_color_url = "999999";
+google_color_text = "000000";
+//--></script>
+<script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</p>
+</div></div>
+<!-- End #sidebar -->
+
+
+</div>
+<!-- End #content -->
+
+
+
+<!-- Begin #footer -->
+<div id="footer"><hr />
+  <p>LastHalo is coded by <a href="http://uzyn.com">Chua U-Zyn</a>. Bug reports and suggestions, please email <a href="mailto:lasthalo@uzyn.com">lasthalo@uzyn.com</a>.&nbsp;</p>
+
+</div>
+<!-- End #footer -->
+
+
+
+</body>
+</html>

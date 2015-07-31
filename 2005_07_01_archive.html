@@ -1,0 +1,690 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Lasthalo Development Weblog: July 2005</title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="MSSmartTagsPreventParsing" content="true" />
+<meta name="generator" content="Blogger" />
+<link rel="alternate" type="application/atom+xml" title="Lasthalo Development Weblog - Atom" href="http://lasthalo.uzyn.com/atom.xml" />
+<link rel="alternate" type="application/rss+xml" title="Lasthalo Development Weblog - RSS" href="http://lasthalo.uzyn.com/rss.xml" />
+<link rel="service.post" type="application/atom+xml" title="Lasthalo Development Weblog - Atom" href="http://www.blogger.com/feeds/11793814/posts/default" />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.blogger.com/rsd.g?blogID=11793814" />
+<style type="text/css">
+@import url("http://www.blogger.com/css/blog_controls.css");
+@import url("http://www.blogger.com/dyn-css/authorization.css?blogID=11793814");
+</style>
+
+
+  <style type="text/css">
+/*
+-----------------------------------------------
+Blogger Template Style
+Name:     Minima
+Designer: Douglas Bowman
+URL:      www.stopdesign.com
+Date:     26 Feb 2004
+----------------------------------------------- */
+
+
+body {
+  background:#fff;
+  margin:0;
+  padding:40px 20px;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  text-align:center;
+  color:#333;
+  font-size: 12px;
+  }
+a:link {
+  color:#06c;
+  text-decoration:none;
+  }
+a:visited {
+  color:#06c;
+  text-decoration:none;
+  }
+a:hover {
+  color:#c60;
+  text-decoration:underline;
+  }
+a img {
+  border-width:0;
+  }
+
+
+/* Header
+----------------------------------------------- */
+#header {
+  width:780px;
+  margin:0 auto 10px;
+  border:1px solid #ccc;
+  }
+#blog-title {
+  margin:5px 5px 0;
+  padding:20px 20px .25em;
+  border:1px solid #eee;
+  border-width:1px 1px 0;
+  font-size:220%;
+  line-height:1.2em;
+  font-weight:normal;
+  color:#06c;
+  text-transform:uppercase;
+  letter-spacing:.2em;
+  }
+#blog-title a {
+  color:#06c;
+  text-decoration:none;
+  }
+#blog-title a:hover {
+  color:#000;
+  }
+#description {
+  margin:0 5px 5px;
+  padding:0 20px 20px;
+  border:1px solid #eee;
+  border-width:0 1px 1px;
+  max-width:780px;
+  font:78%/1.4em "Trebuchet MS",Trebuchet,Arial,Verdana,Sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.2em;
+  color:#000;
+  }
+
+
+/* Content
+----------------------------------------------- */
+#content {
+  width:780px;
+  margin:0 auto;
+  padding:0;
+  text-align:left;
+  }
+#main {
+  width:530px;
+  float:left;
+  }
+#sidebar {
+  width:220px;
+  float:right;
+  }
+
+
+
+/* Headings
+----------------------------------------------- */
+h2 {
+  margin:1.5em 0 .75em;
+  font:78%/1.4em "Trebuchet MS",Trebuchet,Arial,Verdana,Sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.2em;
+  color:#999;
+  }
+
+
+/* Posts
+----------------------------------------------- */
+.date-header {
+  margin:1.5em 0 .5em;
+  }
+.post {
+  margin:.5em 0 1.5em;
+  border-bottom:1px dotted #ccc;
+  padding-bottom:1.5em;
+  }
+.post-title {
+  margin:.25em 0 0;
+  padding:0 0 4px;
+  font-size:140%;
+  font-weight:normal;
+  line-height:1.4em;
+  color:#c60;
+  }
+.post-title a, .post-title a:visited, .post-title strong {
+  display:block;
+  text-decoration:none;
+  color:#c60;
+  font-weight:normal;
+  }
+.post-title strong, .post-title a:hover {
+  color:#333;
+  }
+.post div {
+  margin:0 0 .75em;
+  line-height:1.6em;
+  }
+p.post-footer {
+  margin:-.25em 0 0;
+  color:#ccc;
+  }
+
+
+
+.post-footer em, .comment-link {
+  font:78%/1.4em "Trebuchet MS",Trebuchet,Arial,Verdana,Sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  }
+.post-footer em {
+  font-style:normal;
+  color:#999;
+  margin-right:.6em;
+  }
+.comment-link {
+  margin-left:.6em;
+  }
+.post blockquote {
+  margin:1em 20px;
+  }
+.post blockquote p {
+  margin:.75em 0;
+  }
+
+
+/* Comments
+----------------------------------------------- */
+#comments h4 {
+  margin:1em 0;
+  font:bold 78%/1.6em "Trebuchet MS",Trebuchet,Arial,Verdana,Sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.2em;
+  color:#999;
+  }
+#comments h4 strong {
+  font-size:130%;
+  }
+#comments-block {
+  margin:1em 0 1.5em;
+  line-height:1.6em;
+  }
+#comments-block dt {
+  margin:.5em 0;
+  }
+#comments-block dd {
+  margin:.25em 0 0;
+  }
+#comments-block dd.comment-timestamp {
+  margin:-.25em 0 2em;
+  font:78%/1.4em "Trebuchet MS",Trebuchet,Arial,Verdana,Sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  }
+#comments-block dd p {
+  margin:0 0 .75em;
+  }
+.deleted-comment {
+  font-style:italic;
+  color:gray;
+  }
+
+
+/* Sidebar Content
+----------------------------------------------- */
+#sidebar ul {
+  margin:0 0 1.5em;
+  padding:0 0 1.5em;
+  border-bottom:1px dotted #ccc;
+  list-style:none;
+  }
+#sidebar li {
+  margin:0;
+  padding:0 0 .25em 15px;
+  text-indent:-15px;
+  line-height:1.5em;
+  }
+#sidebar p {
+
+  color:#666;
+  line-height:1.5em;
+  }
+
+
+/* Profile
+
+
+
+----------------------------------------------- */
+#profile-container {
+  margin:0 0 1.5em;
+  border-bottom:1px dotted #ccc;
+  padding-bottom:1.5em;
+  }
+.profile-datablock {
+  margin:.5em 0 .5em;
+  }
+.profile-img {
+  display:inline;
+  }
+.profile-img img {
+  float:left;
+  padding:4px;
+
+
+  border:1px solid #ddd;
+  margin:0 8px 3px 0;
+  }
+.profile-data {
+  margin:0;
+  font:bold 78%/1.6em "Trebuchet MS",Trebuchet,Arial,Verdana,Sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  }
+.profile-data strong {
+  display:none;
+  }
+.profile-textblock {
+  margin:0 0 .5em;
+  }
+.profile-link {
+  margin:0;
+  font:78%/1.4em "Trebuchet MS",Trebuchet,Arial,Verdana,Sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  }
+
+
+/* Footer
+----------------------------------------------- */
+#footer {
+  width:780px;
+  clear:both;
+  margin:0 auto;
+  }
+#footer hr {
+  display:none;
+  }
+#footer p {
+  margin:0;
+  padding-top:15px;
+  font:78%/1.6em "Trebuchet MS",Trebuchet,Verdana,Sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  }
+
+/* Extra */
+code{
+   font-family: "Courier New", Courier, mono;
+   font-size: 9pt;
+   color: #00662B;
+}
+
+.lasthalo{
+	padding:20px;
+	background-color: #CFEEFF;
+	border: solid 1px #999999;
+}
+
+.lasthalo a{
+	color: #333333;
+	font-weight: bold;
+}
+
+#horilinks{
+    text-align: center;
+    font-weight: normal;
+	color: #000000;
+    font-size: 110%;
+}
+
+#horilinks a{
+    color: #FF00FF;
+    font-weight: normal;
+}
+
+#premiumlink{
+    color: #000099;
+    font-weight: bold;
+}
+
+#premiumlink a{
+    color: #000099;
+    font-weight: bold;
+}
+
+#premiumlink a:visited{
+    color: #000099;
+    font-weight: bold;
+}
+
+#premiumlinkside{
+    color: #000099;
+    font-weight: bold;
+}
+
+#premiumlinkside a{
+    color: #000099;
+    font-weight: bold;
+}
+
+#premiumlinkside a:visited{
+    color: #000099;
+    font-weight: bold;
+}
+
+  </style>
+
+<script type="text/javascript" src="http://www.haloscan.com/load/lasthalo/"></script>
+</head>
+
+<body>
+<div id="header">
+
+  <h1 id="blog-title">
+    
+	Lasthalo Development Weblog
+	
+  </h1>
+  <p id="description">LastHalo - The "last comments" sidebar for Haloscan.</p>
+
+
+<div id="horilinks">
+
+<strong>&nbsp;&nbsp;<a href="http://lasthalo.uzyn.com">Home</a>&nbsp;&nbsp; | &nbsp;&nbsp;<a href="#demo">Demonstration</a>&nbsp;&nbsp; | &nbsp;&nbsp;<a href="http://lasthalo.uzyn.com/2005/03/installation-instructions.html">Installation Instructions</a>&nbsp;&nbsp; | &nbsp;&nbsp;<a href="http://lasthalo.uzyn.com/2005/03/documentations.html">Documentations</a>&nbsp;&nbsp; | &nbsp;&nbsp;<span id="premiumlink"><a href="http://lasthalo.uzyn.com/premium/" title="LastHalo Premium">LastHalo Premium</a></span>&nbsp;&nbsp;</strong>
+
+</div>
+
+
+</div>
+
+<!-- Begin #content -->
+<div id="content">
+
+<!-- Begin #main -->
+<div id="main">
+
+<div id="main2">
+
+
+
+    
+  <h2 class="date-header">Saturday, July 16, 2005</h2>
+  
+
+     
+  <!-- Begin .post -->
+  <div class="post"><a name="112148502467756634"></a>
+         
+    <h3 class="post-title">
+	 
+	 Haloscan's RSS is Down
+	 
+    </h3>
+    
+
+	         <div class="post-body">
+	<div>
+      <div style="clear:both;"></div>You may have come here to find out if LastHalo has indeed gone out of service. Actually no, at the mean time, Haloscan's RSS feed of latest comments, which LastHalo is depending on, is not functioning properly. Hence, LastHalo would not be able to retrieve the latest comments on your Haloscan account.<br /><br />Please wait a few moments, with the efficiency of Haloscan team, it would be functioning again.<br /><br />As for the increasing hosting cost of LastHalo, I currently have a plan in mind. As LastHalo hasn't been updated for such a long time, due to my university vacation, I believe it's time for further improvements (especially presentation wise and other features), and also some bug-fixing time (especially the problem in displaying characters of foreign languages).<br /><br />When I'm finally done so, I would most probably be releasing LastHalo in 2 versions. One is the basic functional version which costs nothing to be installed on your blog (in fact I'm paying for it, as I'm donating my bandwidth), another version would be the enhanced version with the extra features and configurations to make LastHalo's sidebar more suitable for your site's presentation. The latter version would require a small subscription fees.<br /><br />Don't worry. I would not be charging high. My proposed fee structures would be somewhat like Haloscan's, $12 fo 12 months of premium account which should be affordable for most power users. In fact, for non-subscriptin members, they would not miss out anything on LastHalo as they will still be getting basic sweet little functional LastHalo sidebar as it is now.<br /><br />Thanks everybody for your generous positive response and telling me that they would be willing to donate should LastHalo requires so. It means a lot as an encouragement to me to continue to support LastHalo. I would not be accepting any donations for now as I believe, one, it is only a temporary solution; two, I believe that LastHalo would need some improvements to be subscription-worthy.<br /><br />Once again, thank you guys for your continuous support for LastHalo!<br /><br />Yours,<br /><a href="http://uzyn.com/">Chua U-Zyn</a><br /><br /><span style="font-weight: bold;">Update:</span> Haloscan's RSS and LastHalo is working fine now. Looks like the Haloscan team has just made the anchored links to each comments. LastHalo would be updated to cater for that soon.<div style="clear:both; padding-bottom:0.25em"></div>
+    </div>
+    </div>
+    
+    <p class="post-footer">
+      <em>posted by uzyn at <a href="http://lasthalo.uzyn.com/2005/07/haloscans-rss-is-down.html" title="permanent link">11:24 AM</a></em>
+      
+
+<a class="comment-link" href="http://www.haloscan.com/comments/lasthalo/112148502467756634/" title="Comment" onclick="HaloScan('112148502467756634'); return false;"><script type="text/javascript">postCount('112148502467756634'); </script></a> | <a class="comment-link" href="http://www.haloscan.com/tb/lasthalo/112148502467756634/" title="Trackback" onclick="HaloScanTB('112148502467756634'); return false;"><script type="text/javascript">postCountTB('112148502467756634'); </script></a>
+<!-- Trackback autodiscovery code
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	 xmlns:dc="http://purl.org/dc/elements/1.1/"
+	 xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+<rdf:Description
+	 rdf:about="http://lasthalo.uzyn.com/2005/07/haloscans-rss-is-down.html"
+	 dc:identified="http://lasthalo.uzyn.com/2005/07/haloscans-rss-is-down.html"
+	 dc:title="Haloscan's RSS is Down"
+	 trackback:ping="http://haloscan.com/tb/lasthalo/112148502467756634" />
+</rdf:RDF>
+-->
+
+  <span class="item-action"><a href="http://www.blogger.com/email-post.g?blogID=11793814&postID=112148502467756634" title="Email Post"><span class="email-post-icon">&nbsp;</span></a></span><span class="item-control blog-admin pid-13327147"><a style="border:none;" href="http://www.blogger.com/post-edit.g?blogID=11793814&postID=112148502467756634" title="Edit Post"><span class="quick-edit-icon">&nbsp;</span></a></span>
+    </p>
+  
+  </div>
+  <!-- End .post -->
+  
+  
+  
+  <!-- Begin #comments -->
+ 
+
+  <!-- End #comments -->
+
+
+
+    
+  <h2 class="date-header">Tuesday, July 12, 2005</h2>
+  
+
+     
+  <!-- Begin .post -->
+  <div class="post"><a name="112110318685933218"></a>
+         
+    <h3 class="post-title">
+	 
+	 Bandwidth Is Eating Me Up
+	 
+    </h3>
+    
+
+	         <div class="post-body">
+	<div>
+      <div style="clear:both;"></div>I coded <a href="http://lasthalo.uzyn.com/">LastHalo</a>, a free Haloscan sidebar that lists the recent comments for blogs that use <a href="http://haloscan.com/">Haloscan</a>, and have it hosted on my own hosting account.<br /><br /><a href="http://uzyn.com/media/20050712%20-%20monthly.jpg"><img src="http://uzyn.com/media/20050712%20-%20monthly-400.jpg" alt="Monthly bandwidth of LastHalo" width="400" /></a><br /><br />I launched it at late March, and as you can see on my screenshot, the free service is growing exponentially. Last month, the service ate up close to 10GB, and today, it's using up half a gig a day. I have never thought it could eat up so much bandwidth as all LastHalo sent out was only a few <a href="http://lasthalo.uzyn.com/show.php?u=lasthalo">lines of code</a>, with no image, no sound, no animation whatsoever. Imagine just that few lines of codes, eating up 10GB a month. That's massive.<br /><br />Last month, LastHalo service got 2.5 million hits. Dividing by 30, that's 85k hits per day. Dividing further by 24, that's 3.5 thousands hits per HOUR! Just too bad that those hits are not actually visits to LastHalo's homepage but merely requests on the script. Hence, LastHalo's homepage has a Google PageRank of only 1.<br /><br />If it keeps growing exponentially like it is now, I would be having problems affording the bandwidth for that anymore. I would be forced to upgrade my hosting account very soon if I do not want to shut LastHalo down. It would be sad to see a service grows so fast and then have to shut it down so fast too.<br /><br />I would need some help, financially, in supporting the service. I would need about tens of USD per month to pay for my hosting and upgrade to a better one, not just more bandwidth, but also to a more reliable one. Current one keeps doing down every few days. I would hate to start charging for the service.<br /><br />Can anyone of you suggest a good way of me getting some fund from LastHalo for me to support my increasing hosting fees?<br /><br /><strong>Please drop a comment or you can email me (chua@uzyn.com). </strong><br /><br />Thanks.<br /><br />Yours,<br />Chua U-Zyn<br /><a href="http://uzyn.com/">http://uzyn.com</a><div style="clear:both; padding-bottom:0.25em"></div>
+    </div>
+    </div>
+    
+    <p class="post-footer">
+      <em>posted by uzyn at <a href="http://lasthalo.uzyn.com/2005/07/bandwidth-is-eating-me-up.html" title="permanent link">1:29 AM</a></em>
+      
+
+<a class="comment-link" href="http://www.haloscan.com/comments/lasthalo/112110318685933218/" title="Comment" onclick="HaloScan('112110318685933218'); return false;"><script type="text/javascript">postCount('112110318685933218'); </script></a> | <a class="comment-link" href="http://www.haloscan.com/tb/lasthalo/112110318685933218/" title="Trackback" onclick="HaloScanTB('112110318685933218'); return false;"><script type="text/javascript">postCountTB('112110318685933218'); </script></a>
+<!-- Trackback autodiscovery code
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	 xmlns:dc="http://purl.org/dc/elements/1.1/"
+	 xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+<rdf:Description
+	 rdf:about="http://lasthalo.uzyn.com/2005/07/bandwidth-is-eating-me-up.html"
+	 dc:identified="http://lasthalo.uzyn.com/2005/07/bandwidth-is-eating-me-up.html"
+	 dc:title="Bandwidth Is Eating Me Up"
+	 trackback:ping="http://haloscan.com/tb/lasthalo/112110318685933218" />
+</rdf:RDF>
+-->
+
+  <span class="item-action"><a href="http://www.blogger.com/email-post.g?blogID=11793814&postID=112110318685933218" title="Email Post"><span class="email-post-icon">&nbsp;</span></a></span><span class="item-control blog-admin pid-13327147"><a style="border:none;" href="http://www.blogger.com/post-edit.g?blogID=11793814&postID=112110318685933218" title="Edit Post"><span class="quick-edit-icon">&nbsp;</span></a></span>
+    </p>
+  
+  </div>
+  <!-- End .post -->
+  
+  
+  
+  <!-- Begin #comments -->
+ 
+
+  <!-- End #comments -->
+
+
+</div></div>
+<!-- End #main -->
+
+
+
+
+
+
+
+<!-- Begin #sidebar -->
+<div id="sidebar"><div id="sidebar2">
+
+<script type="text/javascript"><!--
+google_ad_client = "pub-6699632613168704";
+google_ad_width = 180;
+google_ad_height = 150;
+google_ad_format = "180x150_as";
+google_ad_type = "text_image";
+google_ad_channel ="3434476738";
+google_color_border = "FFFFFF";
+google_color_bg = "FFFFFF";
+google_color_link = "0066CC";
+google_color_url = "999999";
+google_color_text = "000000";
+//--></script>
+<script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+  
+  
+  <h2 class="sidebar-title">About LastHalo</h2>
+  <p>LastHalo is a "last comment" sidebar created for <a href="http://haloscan.com">Haloscan</a> users.</p>
+  <p><b><a href="http://lasthalo.uzyn.com/2005/03/installation-instructions.html">Installation Instructions</a></b><br />
+  <a href="http://lasthalo.uzyn.com/2005/03/documentations.html">Documentations & Advanced Features</a><br />
+  <p id="premiumlinkside"><a href="http://lasthalo.uzyn.com/premium/" title="LastHalo Premium">LastHalo Premium</a></p>  
+  Current version: <b>v0.5a Beta</b></p>
+  <p>LastHalo is coded by <a href="http://uzyn.com">Chua U-Zyn</a><br />
+  Email: <a href="mailto:lasthalo@uzyn.com">lasthalo@uzyn.com</a></p>
+
+  <a name="demo"></a>
+  <h2 class="sidebar-title">Last Comments</h2>
+  <script language="javascript" type="text/javascript"
+  src="http://lasthalo.uzyn.com/show.php?u=lasthalo">
+  </script>
+
+  <h2 class="sidebar-title">Sponsored Link</h2>
+    <ul>
+<li><a href="http://ping.sg" title="The Community-Driven Meta Blog for Singapore Bloggers">ping.sg</a></li>
+  </ul>
+
+  
+
+  <h2 class="sidebar-title">Links</h2>
+    <ul>
+    	<li><a href="http://uzyn.com/">uzyn.com</a></li>
+    	<li><a href="http://haloscan.com">Haloscan</a></li>
+    	<li><a href="http://blogger.com">Blogger</a></li>
+  </ul>
+
+  
+
+  
+  <h2 class="sidebar-title">Previous Posts</h2>
+    <ul id="recently">
+    
+        <li><a href="http://lasthalo.uzyn.com/2006/06/advertise-with-lasthalo.html">Advertise with LastHalo</a></li>
+     
+        <li><a href="http://lasthalo.uzyn.com/2006/03/lasthalo-premium-is-live.html">LastHalo Premium is Live!</a></li>
+     
+        <li><a href="http://lasthalo.uzyn.com/2006/03/switching-host.html">Switching Host</a></li>
+     
+        <li><a href="http://lasthalo.uzyn.com/2006/02/ad-supported.html">Ad-Supported</a></li>
+     
+        <li><a href="http://lasthalo.uzyn.com/2005/11/updates-coming-up.html">Updates Coming Up</a></li>
+     
+        <li><a href="http://lasthalo.uzyn.com/2005/10/lasthalo-v05-caching.html">LastHalo v0.5: Caching</a></li>
+     
+        <li><a href="http://lasthalo.uzyn.com/2005/09/v04-beta-launched-blog-post-title.html">v0.4 Beta Launched: Blog Post Title Retrieval Enab...</a></li>
+     
+        <li><a href="http://lasthalo.uzyn.com/2005/09/blog-title-popup.html">Blog Title Popup</a></li>
+     
+        <li><a href="http://lasthalo.uzyn.com/2005/09/lasthalo-bandwidth-exceeded-please.html">LastHalo Bandwidth Exceeded, Please Help</a></li>
+     
+        <li><a href="http://lasthalo.uzyn.com/2005/09/haloscans-blog-title-retrieval.html">Haloscan&#39;s Blog Title Retrieval</a></li>
+     
+  </ul>
+    
+
+  <h2 class="sidebar-title">Archives</h2>
+    <ul class="archive-list">
+   	  
+    	<li><a href="http://lasthalo.uzyn.com/2005_03_01_archive.html">March 2005</a></li>
+	  
+    	<li><a href="http://lasthalo.uzyn.com/2005_04_01_archive.html">April 2005</a></li>
+	  
+    	<li><a href="http://lasthalo.uzyn.com/2005_05_01_archive.html">May 2005</a></li>
+	  
+    	<li><a href="http://lasthalo.uzyn.com/2005_07_01_archive.html">July 2005</a></li>
+	  
+    	<li><a href="http://lasthalo.uzyn.com/2005_09_01_archive.html">September 2005</a></li>
+	  
+    	<li><a href="http://lasthalo.uzyn.com/2005_10_01_archive.html">October 2005</a></li>
+	  
+    	<li><a href="http://lasthalo.uzyn.com/2005_11_01_archive.html">November 2005</a></li>
+	  
+    	<li><a href="http://lasthalo.uzyn.com/2006_02_01_archive.html">February 2006</a></li>
+	  
+    	<li><a href="http://lasthalo.uzyn.com/2006_03_01_archive.html">March 2006</a></li>
+	  
+    	<li><a href="http://lasthalo.uzyn.com/2006_06_01_archive.html">June 2006</a></li>
+	  
+
+  </ul>
+  
+
+      <a href="http://lasthalo.uzyn.com/atom.xml"><img src="http://uzyn.com/img/xml.gif" alt="atom feed" /></a>
+
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript" language="javascript">
+var sc_project=628806; 
+var sc_partition=5; 
+var sc_security="f8ba03c5"; 
+
+</script>
+<!-- Start of StatCounter Code -->
+<script type="text/javascript" language="javascript">
+<!-- 
+var sc_project=628806; 
+var sc_partition=5; 
+var sc_security="f8ba03c5"; 
+var sc_invisible=1; 
+//-->
+</script>
+
+<script type="text/javascript" language="javascript" src="http://www.statcounter.com/counter/counter.js"></script><noscript><a href="http://www.statcounter.com/" target="_blank"><img  src="http://c6.statcounter.com/counter.php?sc_project=628806&amp;java=0&amp;security=f8ba03c5&amp;invisible=1" alt="web log free" border="0"></a> </noscript>
+<!-- End of StatCounter Code -->
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-52524-3";
+urchinTracker();
+</script>
+
+      <p><a href="http://lasthalo.uzyn.com"><img src="http://lasthalo.uzyn.com/lhicon.gif" alt="Last Comments Add-On by LastHalo" width="88" height="31" /></a></p>
+      <p id="powered-by"><a href="http://www.blogger.com"><img src="http://buttons.blogger.com/bloggerbutton1.gif" alt="Powered by Blogger" /></a></p>
+      <p><a href="http://www.haloscan.com/"><img width="88" height="31" src="http://www.haloscan.com/halolink.gif" border="0" alt="Weblog Commenting and Trackback by HaloScan.com" /></a></p>
+
+<p>
+<script type="text/javascript"><!--
+google_ad_client = "pub-6699632613168704";
+google_ad_width = 160;
+google_ad_height = 600;
+google_ad_format = "160x600_as";
+google_ad_type = "image";
+google_ad_channel ="1175873869";
+google_color_border = "FFFFFF";
+google_color_bg = "FFFFFF";
+google_color_link = "6699CC";
+google_color_url = "999999";
+google_color_text = "000000";
+//--></script>
+<script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</p>
+</div></div>
+<!-- End #sidebar -->
+
+
+</div>
+<!-- End #content -->
+
+
+
+<!-- Begin #footer -->
+<div id="footer"><hr />
+  <p>LastHalo is coded by <a href="http://uzyn.com">Chua U-Zyn</a>. Bug reports and suggestions, please email <a href="mailto:lasthalo@uzyn.com">lasthalo@uzyn.com</a>.&nbsp;</p>
+
+</div>
+<!-- End #footer -->
+
+
+
+</body>
+</html>
